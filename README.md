@@ -11,5 +11,4 @@ This repo is for the use in Communication course (2017-2018) at Department of el
 * Microchip MPLABX IDE http://www.microchip.com/mplab/mplab-x-ide
 * Compiler XC32 (v1.44) downloaded from MPLABX IDE
 * Atlassian SourceTree https://www.sourcetreeapp.com/
-* 
-	*
+* PIC32 Legacy Peripheral Libraries http://www.microchip.com/SWLibraryWeb/product.aspx?product=PIC32%20Peripheral%20Library
