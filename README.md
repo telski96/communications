@@ -1,5 +1,5 @@
 # Communications in electronics
-This repo is for the use in Communication course (2018-2018) at Department of electronics, TU-Sofia, FETT
+This repo is for the use in Communication course (2017-2018) at Department of electronics, FETT, TU-Sofia.
 
 ## Hardware 
 * PIC-32WEB Olimex https://www.olimex.com/Products/PIC/Development/PIC32-WEB/
@@ -10,4 +10,4 @@ This repo is for the use in Communication course (2018-2018) at Department of el
 ## Software
 * Microchip MPLABX IDE http://www.microchip.com/mplab/mplab-x-ide
 * Compiler XC32 (v1.44) downloaded from MPLABX IDE
-* AtlasSourceTree 
+* Atlassian SourceTree https://www.sourcetreeapp.com/
