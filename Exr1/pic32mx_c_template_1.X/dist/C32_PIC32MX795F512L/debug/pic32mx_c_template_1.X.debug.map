@@ -15,21 +15,21 @@ C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../..
 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
                               C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o) (_exit)
 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
-                              build/C32_PIC32MX795F512L/production/main.o (CheKseg0CacheOn)
+                              build/C32_PIC32MX795F512L/debug/main.o (CheKseg0CacheOn)
 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
-                              build/C32_PIC32MX795F512L/production/main.o (INTConfigureSystem)
+                              build/C32_PIC32MX795F512L/debug/main.o (INTConfigureSystem)
 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
-                              build/C32_PIC32MX795F512L/production/main.o (INTDisableInterrupts)
+                              build/C32_PIC32MX795F512L/debug/main.o (INTDisableInterrupts)
 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
-                              build/C32_PIC32MX795F512L/production/main.o (INTRestoreInterrupts)
+                              build/C32_PIC32MX795F512L/debug/main.o (INTRestoreInterrupts)
 
 Microchip PIC32 Memory-Usage Report
 
 kseg0 Program-Memory Usage
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-.text                   0x9d000000          0x8a8        2216  Application's executable code 
-      Total kseg0_program_mem used  :       0x8a8        2216  0.4% of 0x80000
+.text                   0x9d000000          0x954        2388  Application's executable code 
+      Total kseg0_program_mem used  :       0x954        2388  0.5% of 0x80000
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -51,15 +51,15 @@ section                    address  length [bytes]      (dec)  Description
 .bev_excpt              0xbfc00380           0x10          16  BEV-Exception handler 
          Total kseg1_boot_mem used  :        0x20          32  2.7% of 0x490
         --------------------------------------------------------------------------
-         Total Program Memory used  :       0xac0        2752  0.5% of 0x81e00
+         Total Program Memory used  :       0xb6c        2924  0.5% of 0x81e00
         --------------------------------------------------------------------------
 
 
 kseg1 Data-Memory Usage
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-.sbss                   0xa0000000           0x24          36  Small uninitialized data 
-.stack                  0xa0000028          0x400        1024  Minimum space reserved for stack 
+.sbss                   0xa0000200           0x24          36  Small uninitialized data 
+.stack                  0xa0000228          0x400        1024  Minimum space reserved for stack 
          Total kseg1_data_mem used  :       0x424        1060  3.2% of 0x8000
         --------------------------------------------------------------------------
             Total Data Memory used  :       0x424        1060  3.2% of 0x8000
@@ -69,20 +69,20 @@ Discarded input sections
 
  .reginfo       0x00000000       0x18 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/crt0.o
  .pdr           0x00000000       0xa0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/crt0.o
- .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/production/configuration_bits.o
- .pdr           0x00000000        0x0 build/C32_PIC32MX795F512L/production/configuration_bits.o
- .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/production/exceptions.o
- .pdr           0x00000000       0x20 build/C32_PIC32MX795F512L/production/exceptions.o
- .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/production/interrupts.o
- .pdr           0x00000000        0x0 build/C32_PIC32MX795F512L/production/interrupts.o
- .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/production/main.o
- .pdr           0x00000000       0x20 build/C32_PIC32MX795F512L/production/main.o
- .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/production/system.o
- .pdr           0x00000000        0x0 build/C32_PIC32MX795F512L/production/system.o
- .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/production/user.o
- .pdr           0x00000000       0x20 build/C32_PIC32MX795F512L/production/user.o
- .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/production/Tick.o
- .pdr           0x00000000      0x100 build/C32_PIC32MX795F512L/production/Tick.o
+ .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .pdr           0x00000000        0x0 build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/debug/exceptions.o
+ .pdr           0x00000000       0x20 build/C32_PIC32MX795F512L/debug/exceptions.o
+ .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/debug/interrupts.o
+ .pdr           0x00000000        0x0 build/C32_PIC32MX795F512L/debug/interrupts.o
+ .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/debug/main.o
+ .pdr           0x00000000       0x20 build/C32_PIC32MX795F512L/debug/main.o
+ .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/debug/system.o
+ .pdr           0x00000000        0x0 build/C32_PIC32MX795F512L/debug/system.o
+ .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/debug/user.o
+ .pdr           0x00000000       0x20 build/C32_PIC32MX795F512L/debug/user.o
+ .reginfo       0x00000000       0x18 build/C32_PIC32MX795F512L/debug/Tick.o
+ .pdr           0x00000000      0x100 build/C32_PIC32MX795F512L/debug/Tick.o
  .reginfo       0x00000000       0x18 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(general-exception.o)
  .pdr           0x00000000       0x20 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(general-exception.o)
  .reginfo       0x00000000       0x18 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
@@ -128,14 +128,19 @@ configsfrs       0xbfc02ff0         0x00000010
 Linker script and memory map
 
 LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/crt0.o
-LOAD build/C32_PIC32MX795F512L/production/configuration_bits.o
-LOAD build/C32_PIC32MX795F512L/production/exceptions.o
-LOAD build/C32_PIC32MX795F512L/production/interrupts.o
-LOAD build/C32_PIC32MX795F512L/production/main.o
-LOAD build/C32_PIC32MX795F512L/production/system.o
-LOAD build/C32_PIC32MX795F512L/production/user.o
-LOAD build/C32_PIC32MX795F512L/production/Tick.o
+                0x00000001                _DEBUGGER = 0x1
+LOAD build/C32_PIC32MX795F512L/debug/configuration_bits.o
+LOAD build/C32_PIC32MX795F512L/debug/exceptions.o
+LOAD build/C32_PIC32MX795F512L/debug/interrupts.o
+LOAD build/C32_PIC32MX795F512L/debug/main.o
+LOAD build/C32_PIC32MX795F512L/debug/system.o
+LOAD build/C32_PIC32MX795F512L/debug/user.o
+LOAD build/C32_PIC32MX795F512L/debug/Tick.o
                 0x00000001                __MPLAB_BUILD = 0x1
+                0x00000001                __ICD2RAM = 0x1
+                0x00000001                __MPLAB_DEBUG = 0x1
+                0x00000001                __DEBUG = 0x1
+                0x00000001                __MPLAB_DEBUGGER_PK3 = 0x1
 LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4\libgcc.a
 START GROUP
 LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libdebug.a
@@ -179,11 +184,13 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
  *(.bev_handler)
  .bev_handler   0xbfc00380       0x10 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/crt0.o
 
-.dbg_excpt      0xbfc00480        0x0
+.dbg_excpt      0xbfc00480        0x8
                 0xbfc00480                . = (. + DEFINED (_DEBUGGER)?0x8:0x0)
+ *fill*         0xbfc00480        0x8 00
 
-.dbg_code       0xbfc02000        0x0
+.dbg_code       0xbfc02000      0xff0
                 0xbfc02000                . = (. + DEFINED (_DEBUGGER)?0xff0:0x0)
+ *fill*         0xbfc02000      0xff0 00
 
 .app_excpt      0x9fc01180       0x10
  *(.gen_handler)
@@ -207,7 +214,7 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
 
 .vector_4       0x9fc01280        0x8
  *(.vector_4)
- .vector_4      0x9fc01280        0x8 build/C32_PIC32MX795F512L/production/Tick.o
+ .vector_4      0x9fc01280        0x8 build/C32_PIC32MX795F512L/debug/Tick.o
                 0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_4) <= (_vector_spacing << 0x5))), function at exception vector 4 too large)
 
 .vector_5       0x9fc012a0        0x0
@@ -450,88 +457,88 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
  *(.startup)
  .startup       0x9fc00490      0x1e0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/crt0.o
 
-.text           0x9d000000      0x8a8
+.text           0x9d000000      0x954
                 0x9d000000                _text_begin = .
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x9d000000       0x18 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/crt0.o
- .text          0x9d000018        0x0 build/C32_PIC32MX795F512L/production/configuration_bits.o
- .text          0x9d000018       0x48 build/C32_PIC32MX795F512L/production/exceptions.o
+ .text          0x9d000018        0x0 build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .text          0x9d000018       0x48 build/C32_PIC32MX795F512L/debug/exceptions.o
                 0x9d000018                _general_exception_handler
- .text          0x9d000060        0x0 build/C32_PIC32MX795F512L/production/interrupts.o
- .text          0x9d000060      0x3c4 build/C32_PIC32MX795F512L/production/main.o
+ .text          0x9d000060        0x0 build/C32_PIC32MX795F512L/debug/interrupts.o
+ .text          0x9d000060      0x470 build/C32_PIC32MX795F512L/debug/main.o
                 0x9d000060                main
- .text          0x9d000424        0x0 build/C32_PIC32MX795F512L/production/system.o
- .text          0x9d000424       0x20 build/C32_PIC32MX795F512L/production/user.o
-                0x9d000424                InitApp
- .text          0x9d000444      0x2c4 build/C32_PIC32MX795F512L/production/Tick.o
-                0x9d000444                TickInit
-                0x9d00057c                TickGet
-                0x9d0005b0                TickGetDiv256
-                0x9d000604                TickGetDiv64K
-                0x9d000658                TickConvertToMilliseconds
-                0x9d000680                _T1Interrupt
- .text          0x9d000708        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(general-exception.o)
+ .text          0x9d0004d0        0x0 build/C32_PIC32MX795F512L/debug/system.o
+ .text          0x9d0004d0       0x20 build/C32_PIC32MX795F512L/debug/user.o
+                0x9d0004d0                InitApp
+ .text          0x9d0004f0      0x2c4 build/C32_PIC32MX795F512L/debug/Tick.o
+                0x9d0004f0                TickInit
+                0x9d000628                TickGet
+                0x9d00065c                TickGetDiv256
+                0x9d0006b0                TickGetDiv64K
+                0x9d000704                TickConvertToMilliseconds
+                0x9d00072c                _T1Interrupt
+ .text          0x9d0007b4        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(general-exception.o)
  .text.general_exception
-                0x9d000708       0xd0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(general-exception.o)
-                0x9d000708                _general_exception_context
- .text          0x9d0007d8        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
- .text.exit     0x9d0007d8       0x10 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
-                0x9d0007d8                exit
- .text          0x9d0007e8        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
+                0x9d0007b4       0xd0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(general-exception.o)
+                0x9d0007b4                _general_exception_context
+ .text          0x9d000884        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
+ .text.exit     0x9d000884       0x10 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
+                0x9d000884                exit
+ .text          0x9d000894        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
  .text._bootstrap_exception_handler
-                0x9d0007e8        0x8 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
-                0x9d0007e8                _bootstrap_exception_handler
- .text          0x9d0007f0        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
+                0x9d000894        0x8 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
+                0x9d000894                _bootstrap_exception_handler
+ .text          0x9d00089c        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
  .text._on_reset
-                0x9d0007f0        0x8 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
-                0x9d0007f0                _on_reset
- .text          0x9d0007f8        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-bootstrap.o)
+                0x9d00089c        0x8 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
+                0x9d00089c                _on_reset
+ .text          0x9d0008a4        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-bootstrap.o)
  .text._on_bootstrap
-                0x9d0007f8        0x8 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-bootstrap.o)
-                0x9d0007f8                _on_bootstrap
- .text          0x9d000800       0x18 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-nmi-handler.o)
-                0x9d000800                _nmi_handler
- .text          0x9d000818        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
- .text._exit    0x9d000818        0x8 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
-                0x9d000818                _exit
- .text          0x9d000820        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
+                0x9d0008a4        0x8 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-bootstrap.o)
+                0x9d0008a4                _on_bootstrap
+ .text          0x9d0008ac       0x18 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-nmi-handler.o)
+                0x9d0008ac                _nmi_handler
+ .text          0x9d0008c4        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
+ .text._exit    0x9d0008c4        0x8 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
+                0x9d0008c4                _exit
+ .text          0x9d0008cc        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
  .text.CheKseg0CacheOff
-                0x9d000820       0x18 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
-                0x9d000820                CheKseg0CacheOff
+                0x9d0008cc       0x18 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
+                0x9d0008cc                CheKseg0CacheOff
  .text.CheKseg0CacheOn
-                0x9d000838       0x18 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
-                0x9d000838                CheKseg0CacheOn
- .text          0x9d000850        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
+                0x9d0008e4       0x18 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
+                0x9d0008e4                CheKseg0CacheOn
+ .text          0x9d0008fc        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
  .text.INTConfigureSystem
-                0x9d000850       0x34 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
-                0x9d000850                INTConfigureSystem
- .text          0x9d000884        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
+                0x9d0008fc       0x34 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
+                0x9d0008fc                INTConfigureSystem
+ .text          0x9d000930        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
  .text.INTDisableInterrupts
-                0x9d000884        0x8 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
-                0x9d000884                INTDisableInterrupts
- .text          0x9d00088c        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
+                0x9d000930        0x8 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
+                0x9d000930                INTDisableInterrupts
+ .text          0x9d000938        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
  .text.INTRestoreInterrupts
-                0x9d00088c       0x1c C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
-                0x9d00088c                INTRestoreInterrupts
- .text          0x9d0008a8        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/./proc/32MX460F512L\processor.o
+                0x9d000938       0x1c C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
+                0x9d000938                INTRestoreInterrupts
+ .text          0x9d000954        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/./proc/32MX460F512L\processor.o
  *(.text.*personality*)
  *(.gnu.warning)
  *(.mips16.fn.*)
  *(.mips16.call.*)
-                0x9d0008a8                _text_end = .
+                0x9d000954                _text_end = .
 
-.rodata         0x9d0008a8        0x0
+.rodata         0x9d000954        0x0
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  *(.rodata1)
-                0x9d0008a8                . = ALIGN (0x4)
+                0x9d000954                . = ALIGN (0x4)
 
-.sdata2         0x9d0008a8        0x0
+.sdata2         0x9d000954        0x0
  *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
-                0x9d0008a8                . = ALIGN (0x4)
+                0x9d000954                . = ALIGN (0x4)
 
-.sbss2          0x9d0008a8        0x0
+.sbss2          0x9d000954        0x0
  *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
-                0x9d0008a8                . = ALIGN (0x4)
+                0x9d000954                . = ALIGN (0x4)
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
@@ -539,121 +546,122 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
 .eh_frame
  *(.eh_frame)
 
-.dbg_data       0xa0000000        0x0
+.dbg_data       0xa0000000      0x200
                 0xa0000000                . = (. + DEFINED (_DEBUGGER)?0x200:0x0)
+ *fill*         0xa0000000      0x200 00
 
-.persist        0xa0000000        0x0
-                0xa0000000                _persist_begin = .
+.persist        0xa0000200        0x0
+                0xa0000200                _persist_begin = .
  *(.persist .persist.*)
-                0xa0000000                _persist_end = .
+                0xa0000200                _persist_end = .
 
-.data           0xa0000000        0x0 load address 0x9d0008a8
-                0xa0000000                _data_begin = .
+.data           0xa0000200        0x0 load address 0x9d000954
+                0xa0000200                _data_begin = .
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/crt0.o
- .data          0xa0000000        0x0 build/C32_PIC32MX795F512L/production/configuration_bits.o
- .data          0xa0000000        0x0 build/C32_PIC32MX795F512L/production/exceptions.o
- .data          0xa0000000        0x0 build/C32_PIC32MX795F512L/production/interrupts.o
- .data          0xa0000000        0x0 build/C32_PIC32MX795F512L/production/main.o
- .data          0xa0000000        0x0 build/C32_PIC32MX795F512L/production/system.o
- .data          0xa0000000        0x0 build/C32_PIC32MX795F512L/production/user.o
- .data          0xa0000000        0x0 build/C32_PIC32MX795F512L/production/Tick.o
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(general-exception.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-bootstrap.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-nmi-handler.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
- .data          0xa0000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/./proc/32MX460F512L\processor.o
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/crt0.o
+ .data          0xa0000200        0x0 build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .data          0xa0000200        0x0 build/C32_PIC32MX795F512L/debug/exceptions.o
+ .data          0xa0000200        0x0 build/C32_PIC32MX795F512L/debug/interrupts.o
+ .data          0xa0000200        0x0 build/C32_PIC32MX795F512L/debug/main.o
+ .data          0xa0000200        0x0 build/C32_PIC32MX795F512L/debug/system.o
+ .data          0xa0000200        0x0 build/C32_PIC32MX795F512L/debug/user.o
+ .data          0xa0000200        0x0 build/C32_PIC32MX795F512L/debug/Tick.o
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(general-exception.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-bootstrap.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-nmi-handler.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
+ .data          0xa0000200        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/./proc/32MX460F512L\processor.o
  *(.gnu.linkonce.d.*personality*)
  *(.data1)
-                0x9d0008a8                _data_image_begin = LOADADDR (.data)
+                0x9d000954                _data_image_begin = LOADADDR (.data)
 
 .eh_frame
  *(.eh_frame)
-                0xa0000000                . = .
-                0xa0007ff0                _gp = (ALIGN (0x10) + 0x7ff0)
+                0xa0000200                . = .
+                0xa00081f0                _gp = (ALIGN (0x10) + 0x7ff0)
 
 .got
  *(.got.plt)
  *(.got)
 
-.sdata          0xa0000000        0x0 load address 0x9d0008a8
-                0xa0000000                _sdata_begin = .
+.sdata          0xa0000200        0x0 load address 0x9d000954
+                0xa0000200                _sdata_begin = .
  *(.sdata .sdata.* .gnu.linkonce.s.*)
-                0xa0000000                _sdata_end = .
+                0xa0000200                _sdata_end = .
 
 .lit8
  *(.lit8)
 
 .lit4
  *(.lit4)
-                0xa0000000                . = ALIGN (0x4)
-                0xa0000000                _data_end = .
-                0xa0000000                _bss_begin = .
+                0xa0000200                . = ALIGN (0x4)
+                0xa0000200                _data_end = .
+                0xa0000200                _bss_begin = .
 
-.sbss           0xa0000000       0x24 load address 0x9d0008a8
-                0xa0000000                _sbss_begin = .
+.sbss           0xa0000200       0x24 load address 0x9d000954
+                0xa0000200                _sbss_begin = .
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0xa0000000        0xc build/C32_PIC32MX795F512L/production/exceptions.o
- .sbss          0xa000000c        0xc build/C32_PIC32MX795F512L/production/main.o
- .sbss          0xa0000018        0xc build/C32_PIC32MX795F512L/production/Tick.o
+ .sbss          0xa0000200        0xc build/C32_PIC32MX795F512L/debug/exceptions.o
+ .sbss          0xa000020c        0xc build/C32_PIC32MX795F512L/debug/main.o
+ .sbss          0xa0000218        0xc build/C32_PIC32MX795F512L/debug/Tick.o
  *(.scommon)
-                0xa0000024                _sbss_end = .
+                0xa0000224                _sbss_end = .
 
-.bss            0xa0000024        0x0 load address 0x9d0008a8
+.bss            0xa0000224        0x0 load address 0x9d000954
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/crt0.o
- .bss           0xa0000024        0x0 build/C32_PIC32MX795F512L/production/configuration_bits.o
- .bss           0xa0000024        0x0 build/C32_PIC32MX795F512L/production/exceptions.o
- .bss           0xa0000024        0x0 build/C32_PIC32MX795F512L/production/interrupts.o
- .bss           0xa0000024        0x0 build/C32_PIC32MX795F512L/production/main.o
- .bss           0xa0000024        0x0 build/C32_PIC32MX795F512L/production/system.o
- .bss           0xa0000024        0x0 build/C32_PIC32MX795F512L/production/user.o
- .bss           0xa0000024        0x0 build/C32_PIC32MX795F512L/production/Tick.o
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(general-exception.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-bootstrap.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-nmi-handler.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
- .bss           0xa0000024        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/./proc/32MX460F512L\processor.o
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/crt0.o
+ .bss           0xa0000224        0x0 build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .bss           0xa0000224        0x0 build/C32_PIC32MX795F512L/debug/exceptions.o
+ .bss           0xa0000224        0x0 build/C32_PIC32MX795F512L/debug/interrupts.o
+ .bss           0xa0000224        0x0 build/C32_PIC32MX795F512L/debug/main.o
+ .bss           0xa0000224        0x0 build/C32_PIC32MX795F512L/debug/system.o
+ .bss           0xa0000224        0x0 build/C32_PIC32MX795F512L/debug/user.o
+ .bss           0xa0000224        0x0 build/C32_PIC32MX795F512L/debug/Tick.o
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(general-exception.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-bootstrap.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-nmi-handler.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
+ .bss           0xa0000224        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib/./proc/32MX460F512L\processor.o
  *(COMMON)
-                0xa0000024                . = ALIGN (0x4)
-                0xa0000024                . = ALIGN (0x4)
-                0xa0000024                _end = .
-                0xa0000024                _bss_end = .
+                0xa0000224                . = ALIGN (0x4)
+                0xa0000224                . = ALIGN (0x4)
+                0xa0000224                _end = .
+                0xa0000224                _bss_end = .
 
-.heap           0xa0000028        0x0 load address 0x9d0008a8
-                0xa0000028                _heap = .
-                0xa0000028                . = (. + _min_heap_size)
-                0xa0000028                . = ALIGN (0x8)
+.heap           0xa0000228        0x0 load address 0x9d000954
+                0xa0000228                _heap = .
+                0xa0000228                . = (. + _min_heap_size)
+                0xa0000228                . = ALIGN (0x8)
 
-.stack          0xa0000028      0x400 load address 0x9d0008a8
-                0xa0000028                _splim = .
-                0xa0000028                _SPLIM = .
-                0xa0000428                . = (. + _min_stack_size)
- *fill*         0xa0000028      0x400 00
-                0xa0000428                . = ALIGN (0x8)
+.stack          0xa0000228      0x400 load address 0x9d000954
+                0xa0000228                _splim = .
+                0xa0000228                _SPLIM = .
+                0xa0000628                . = (. + _min_stack_size)
+ *fill*         0xa0000228      0x400 00
+                0xa0000628                . = ALIGN (0x8)
 
-.ramfunc        0xa0000800        0x0 load address 0x9d0008a8
+.ramfunc        0xa0000800        0x0 load address 0x9d000954
                 0xa0000800                _ramfunc_begin = .
  *(.ramfunc .ramfunc.*)
                 0xa0000800                . = ALIGN (0x4)
                 0xa0000800                _ramfunc_end = .
-                0x9d0008a8                _ramfunc_image_begin = LOADADDR (.ramfunc)
+                0x9d000954                _ramfunc_image_begin = LOADADDR (.ramfunc)
                 0x00000000                _ramfunc_length = SIZEOF (.ramfunc)
                 0x00000800                _bmxdkpba_address = (_ramfunc_begin - 0xa0000000)
                 0x00008000                _bmxdudba_address = 0x8000
@@ -686,13 +694,13 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
  *(.stab.indexstr)
 
 .mdebug.abi32   0x00000000        0x0
- .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/production/configuration_bits.o
- .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/production/exceptions.o
- .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/production/interrupts.o
- .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/production/main.o
- .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/production/system.o
- .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/production/user.o
- .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/production/Tick.o
+ .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/debug/exceptions.o
+ .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/debug/interrupts.o
+ .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/debug/main.o
+ .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/debug/system.o
+ .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/debug/user.o
+ .mdebug.abi32  0x00000000        0x0 build/C32_PIC32MX795F512L/debug/Tick.o
  .mdebug.abi32  0x00000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
  .mdebug.abi32  0x00000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
  .mdebug.abi32  0x00000000        0x0 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
@@ -705,13 +713,13 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
 
 .comment        0x00000000      0x54d
  *(.comment)
- .comment       0x00000000       0x50 build/C32_PIC32MX795F512L/production/configuration_bits.o
- .comment       0x00000050       0x50 build/C32_PIC32MX795F512L/production/exceptions.o
- .comment       0x000000a0       0x50 build/C32_PIC32MX795F512L/production/interrupts.o
- .comment       0x000000f0       0x50 build/C32_PIC32MX795F512L/production/main.o
- .comment       0x00000140       0x50 build/C32_PIC32MX795F512L/production/system.o
- .comment       0x00000190       0x50 build/C32_PIC32MX795F512L/production/user.o
- .comment       0x000001e0       0x50 build/C32_PIC32MX795F512L/production/Tick.o
+ .comment       0x00000000       0x50 build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .comment       0x00000050       0x50 build/C32_PIC32MX795F512L/debug/exceptions.o
+ .comment       0x000000a0       0x50 build/C32_PIC32MX795F512L/debug/interrupts.o
+ .comment       0x000000f0       0x50 build/C32_PIC32MX795F512L/debug/main.o
+ .comment       0x00000140       0x50 build/C32_PIC32MX795F512L/debug/system.o
+ .comment       0x00000190       0x50 build/C32_PIC32MX795F512L/debug/user.o
+ .comment       0x000001e0       0x50 build/C32_PIC32MX795F512L/debug/Tick.o
  .comment       0x00000230       0x9d C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
  .comment       0x000002cd       0x50 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
  .comment       0x0000031d       0x50 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
@@ -737,13 +745,13 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
 .debug_aranges  0x00000000      0x1f0
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 build/C32_PIC32MX795F512L/production/exceptions.o
+                0x00000000       0x20 build/C32_PIC32MX795F512L/debug/exceptions.o
  .debug_aranges
-                0x00000020       0x20 build/C32_PIC32MX795F512L/production/main.o
+                0x00000020       0x20 build/C32_PIC32MX795F512L/debug/main.o
  .debug_aranges
-                0x00000040       0x20 build/C32_PIC32MX795F512L/production/user.o
+                0x00000040       0x20 build/C32_PIC32MX795F512L/debug/user.o
  .debug_aranges
-                0x00000060       0x20 build/C32_PIC32MX795F512L/production/Tick.o
+                0x00000060       0x20 build/C32_PIC32MX795F512L/debug/Tick.o
  .debug_aranges
                 0x00000080       0x28 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
  .debug_aranges
@@ -767,13 +775,13 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
                 0x00000000      0x250
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000       0x31 build/C32_PIC32MX795F512L/production/exceptions.o
+                0x00000000       0x31 build/C32_PIC32MX795F512L/debug/exceptions.o
  .debug_pubnames
-                0x00000031       0x1b build/C32_PIC32MX795F512L/production/main.o
+                0x00000031       0x1b build/C32_PIC32MX795F512L/debug/main.o
  .debug_pubnames
-                0x0000004c       0x1e build/C32_PIC32MX795F512L/production/user.o
+                0x0000004c       0x1e build/C32_PIC32MX795F512L/debug/user.o
  .debug_pubnames
-                0x0000006a       0x7e build/C32_PIC32MX795F512L/production/Tick.o
+                0x0000006a       0x7e build/C32_PIC32MX795F512L/debug/Tick.o
  .debug_pubnames
                 0x000000e8       0x1b C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
  .debug_pubnames
@@ -795,13 +803,13 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
 
 .debug_info     0x00000000     0x34eb
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x629 build/C32_PIC32MX795F512L/production/configuration_bits.o
- .debug_info    0x00000629      0x75d build/C32_PIC32MX795F512L/production/exceptions.o
- .debug_info    0x00000d86      0x621 build/C32_PIC32MX795F512L/production/interrupts.o
- .debug_info    0x000013a7      0xa74 build/C32_PIC32MX795F512L/production/main.o
- .debug_info    0x00001e1b      0x61d build/C32_PIC32MX795F512L/production/system.o
- .debug_info    0x00002438      0x632 build/C32_PIC32MX795F512L/production/user.o
- .debug_info    0x00002a6a      0x8bf build/C32_PIC32MX795F512L/production/Tick.o
+ .debug_info    0x00000000      0x629 build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .debug_info    0x00000629      0x75d build/C32_PIC32MX795F512L/debug/exceptions.o
+ .debug_info    0x00000d86      0x621 build/C32_PIC32MX795F512L/debug/interrupts.o
+ .debug_info    0x000013a7      0xa74 build/C32_PIC32MX795F512L/debug/main.o
+ .debug_info    0x00001e1b      0x61d build/C32_PIC32MX795F512L/debug/system.o
+ .debug_info    0x00002438      0x632 build/C32_PIC32MX795F512L/debug/user.o
+ .debug_info    0x00002a6a      0x8bf build/C32_PIC32MX795F512L/debug/Tick.o
  .debug_info    0x00003329       0x30 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
  .debug_info    0x00003359       0x30 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
  .debug_info    0x00003389       0x30 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
@@ -814,13 +822,13 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
 
 .debug_abbrev   0x00000000      0xa7e
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x107 build/C32_PIC32MX795F512L/production/configuration_bits.o
- .debug_abbrev  0x00000107      0x143 build/C32_PIC32MX795F512L/production/exceptions.o
- .debug_abbrev  0x0000024a      0x107 build/C32_PIC32MX795F512L/production/interrupts.o
- .debug_abbrev  0x00000351      0x21a build/C32_PIC32MX795F512L/production/main.o
- .debug_abbrev  0x0000056b      0x107 build/C32_PIC32MX795F512L/production/system.o
- .debug_abbrev  0x00000672      0x11c build/C32_PIC32MX795F512L/production/user.o
- .debug_abbrev  0x0000078e      0x1b5 build/C32_PIC32MX795F512L/production/Tick.o
+ .debug_abbrev  0x00000000      0x107 build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .debug_abbrev  0x00000107      0x143 build/C32_PIC32MX795F512L/debug/exceptions.o
+ .debug_abbrev  0x0000024a      0x107 build/C32_PIC32MX795F512L/debug/interrupts.o
+ .debug_abbrev  0x00000351      0x21a build/C32_PIC32MX795F512L/debug/main.o
+ .debug_abbrev  0x0000056b      0x107 build/C32_PIC32MX795F512L/debug/system.o
+ .debug_abbrev  0x00000672      0x11c build/C32_PIC32MX795F512L/debug/user.o
+ .debug_abbrev  0x0000078e      0x1b5 build/C32_PIC32MX795F512L/debug/Tick.o
  .debug_abbrev  0x00000943       0x23 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
  .debug_abbrev  0x00000966       0x23 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
  .debug_abbrev  0x00000989       0x23 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
@@ -831,31 +839,31 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
  .debug_abbrev  0x00000a38       0x23 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
  .debug_abbrev  0x00000a5b       0x23 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
 
-.debug_line     0x00000000     0x1233
+.debug_line     0x00000000     0x123f
  *(.debug_line)
- .debug_line    0x00000000      0x18b build/C32_PIC32MX795F512L/production/configuration_bits.o
- .debug_line    0x0000018b      0x1b3 build/C32_PIC32MX795F512L/production/exceptions.o
- .debug_line    0x0000033e      0x18b build/C32_PIC32MX795F512L/production/interrupts.o
- .debug_line    0x000004c9      0x2d0 build/C32_PIC32MX795F512L/production/main.o
- .debug_line    0x00000799      0x18b build/C32_PIC32MX795F512L/production/system.o
- .debug_line    0x00000924      0x1a5 build/C32_PIC32MX795F512L/production/user.o
- .debug_line    0x00000ac9      0x1f4 build/C32_PIC32MX795F512L/production/Tick.o
- .debug_line    0x00000cbd       0x85 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
- .debug_line    0x00000d42       0xa6 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
- .debug_line    0x00000de8       0x93 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
- .debug_line    0x00000e7b       0x97 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-bootstrap.o)
- .debug_line    0x00000f12       0x88 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
- .debug_line    0x00000f9a       0x9a C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
- .debug_line    0x00001034       0xa9 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
- .debug_line    0x000010dd       0xab C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
- .debug_line    0x00001188       0xab C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
+ .debug_line    0x00000000      0x18b build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .debug_line    0x0000018b      0x1b3 build/C32_PIC32MX795F512L/debug/exceptions.o
+ .debug_line    0x0000033e      0x18b build/C32_PIC32MX795F512L/debug/interrupts.o
+ .debug_line    0x000004c9      0x2dc build/C32_PIC32MX795F512L/debug/main.o
+ .debug_line    0x000007a5      0x18b build/C32_PIC32MX795F512L/debug/system.o
+ .debug_line    0x00000930      0x1a5 build/C32_PIC32MX795F512L/debug/user.o
+ .debug_line    0x00000ad5      0x1f4 build/C32_PIC32MX795F512L/debug/Tick.o
+ .debug_line    0x00000cc9       0x85 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
+ .debug_line    0x00000d4e       0xa6 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x00000df4       0x93 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
+ .debug_line    0x00000e87       0x97 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-bootstrap.o)
+ .debug_line    0x00000f1e       0x88 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(_exit.o)
+ .debug_line    0x00000fa6       0x9a C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(pcache.o)
+ .debug_line    0x00001040       0xa9 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_configure_system_lib.o)
+ .debug_line    0x000010e9       0xab C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_disable_interrupts_lib.o)
+ .debug_line    0x00001194       0xab C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libmchp_peripheral_32MX460F512L.a(int_restore_interrupts_lib.o)
 
 .debug_frame    0x00000000      0x29c
  *(.debug_frame)
- .debug_frame   0x00000000       0x2c build/C32_PIC32MX795F512L/production/exceptions.o
- .debug_frame   0x0000002c       0x30 build/C32_PIC32MX795F512L/production/main.o
- .debug_frame   0x0000005c       0x2c build/C32_PIC32MX795F512L/production/user.o
- .debug_frame   0x00000088       0xdc build/C32_PIC32MX795F512L/production/Tick.o
+ .debug_frame   0x00000000       0x2c build/C32_PIC32MX795F512L/debug/exceptions.o
+ .debug_frame   0x0000002c       0x30 build/C32_PIC32MX795F512L/debug/main.o
+ .debug_frame   0x0000005c       0x2c build/C32_PIC32MX795F512L/debug/user.o
+ .debug_frame   0x00000088       0xdc build/C32_PIC32MX795F512L/debug/Tick.o
  .debug_frame   0x00000164       0x28 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
  .debug_frame   0x0000018c       0x20 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
  .debug_frame   0x000001ac       0x20 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-on-reset.o)
@@ -868,13 +876,13 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
 
 .debug_str      0x00000000      0x5cc
  *(.debug_str)
- .debug_str     0x00000000       0x12 build/C32_PIC32MX795F512L/production/configuration_bits.o
- .debug_str     0x00000012       0x12 build/C32_PIC32MX795F512L/production/exceptions.o
- .debug_str     0x00000024       0x12 build/C32_PIC32MX795F512L/production/interrupts.o
- .debug_str     0x00000036       0x27 build/C32_PIC32MX795F512L/production/main.o
- .debug_str     0x0000005d       0x12 build/C32_PIC32MX795F512L/production/system.o
- .debug_str     0x0000006f       0x12 build/C32_PIC32MX795F512L/production/user.o
- .debug_str     0x00000081       0x12 build/C32_PIC32MX795F512L/production/Tick.o
+ .debug_str     0x00000000       0x12 build/C32_PIC32MX795F512L/debug/configuration_bits.o
+ .debug_str     0x00000012       0x12 build/C32_PIC32MX795F512L/debug/exceptions.o
+ .debug_str     0x00000024       0x12 build/C32_PIC32MX795F512L/debug/interrupts.o
+ .debug_str     0x00000036       0x27 build/C32_PIC32MX795F512L/debug/main.o
+ .debug_str     0x0000005d       0x12 build/C32_PIC32MX795F512L/debug/system.o
+ .debug_str     0x0000006f       0x12 build/C32_PIC32MX795F512L/debug/user.o
+ .debug_str     0x00000081       0x12 build/C32_PIC32MX795F512L/debug/Tick.o
  .debug_str     0x00000093       0xaf C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(exit.o)
                                  0xb4 (size before relaxing)
  .debug_str     0x00000142       0xa3 C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../../../../pic32mx/lib\libc.a(default-bootstrap-exception-handler.o)
@@ -911,4 +919,4 @@ LOAD C:/Program Files (x86)/Microchip/MPLAB C32/bin/../lib/gcc/pic32mx/3.4.4/../
 
 .debug_varnames
  *(.debug_varnames)
-OUTPUT(dist/C32_PIC32MX795F512L/production/pic32mx_c_template_1.X.production.elf elf32-tradlittlemips)
+OUTPUT(dist/C32_PIC32MX795F512L/debug/pic32mx_c_template_1.X.debug.elf elf32-tradlittlemips)

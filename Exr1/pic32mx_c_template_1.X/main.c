@@ -61,25 +61,25 @@ int32_t main(void)
     INTConfigureSystem(INT_SYSTEM_CONFIG_MULT_VECTOR);
 
     /* TODO <INSERT USER APPLICATION CODE HERE> */
-    LED0_TRIS = 0;
-        LED1_TRIS = 0;
-        LED2_TRIS = 0;
-        LED0_IO = 1;
-        LED1_IO = 1;
-        LED2_IO = 0;
+    LED0_TRIS = 0; // Data direction register LED 1
+    LED1_TRIS = 0; // Data direction register LED 2
+    LED2_TRIS = 0; // Data direction register LED 3
+    LED0_IO = 1; // I/O register LED 1
+    LED1_IO = 1; // I/O register LED 2
+    LED2_IO = 1; // I/O register LED 3
+    BUTTON0_TRIS = 1; // Button 1 data direction register
+    static DWORD ticksCount = 0;
     static DWORD t = 0;
-    TickInit();    
-
+    static DWORD tRes = 0;
+    int i;
+    int but;
+    TickInit();
+//    DoUARTConfig();
     while(1)
     {
-        DelayMs(100ul);        
-//    if(TickGet() - t >= TICK_SECOND/2ul)
-//        {
-//            t = TickGet();
-//            LED0_IO ^= 1;
-//            LED1_IO ^= 1;
-//            LED2_IO ^= 1;
-//        }
-
+        for(i=0; i<40000; i++);
+        mPORTDToggleBits(BIT_0);
+        mPORTDToggleBits(BIT_1);
+        mPORTDToggleBits(BIT_2);
     }
 }
