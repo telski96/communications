@@ -1,0 +1,26 @@
+Demo project for Olimex PIC32-WEB rev.B using Microchip TCP/IP Stack 5.42.
+
+Building the project requires: MPLAB 8.88 or MPLABX 1.41 (or newer); and X32 v1.20 compiler.
+
+Demo description:
+In order to work you must do the following: 
+0) Power the board with external power supply.
+1) Program the PIC32-WEB using PICKit 3 and the MPLAB/MPLABX projects or the prebuilt *.hex file;
+2) Connect LAN cabel to the connector.
+3) Use Microchip Ethernet Discoverer utility to find the IP address of the board or use the console terminal program to follow the output messages about the IP address.
+4) Open that IP address using an internet browser to check and manipulate the state of the board. You will be shown a web page that has some subpages on the left.
+
+	4.0) "Overview" (which is the basic page) shows some info about the board and a box on the right which indicates the state of some pins:
+
+		4.0.0) On the top of the box-menu you will see a dots which indicates the state of: 3 LEDs (one of them blinking). It also gives you an option to toggle their state by click on the dots (except the first one which is blinking permanently). Color of the dot will change on toggling.
+
+		4.0.1) They are followed by an input pins: 3 Button They indicates whether the button are pressed '_'; or not '^'.
+
+		4.0.2) There is also status line:
+		 - Potentiometer:	Shows a number between 0-1023 depending on the state of the potentiometer
+
+	4.1) The rest of the subpages are standard for the Microchip TCP/IP stack.
+
+
+Notes:
+If you want to change or edit the webpage you must edit the files in "<extract directory>\PIC-WEB Demo\TCPIP\Demo App\WebPages2" and then re-generate the files: HTTPPrint.h; HTTPPrint.idx; MFPSImg.c. In order to do this you have to use the MPFS2 utility provided in the Microchip TCP/IP stack. It could be found at "<extract directory>\PIC-WEB Demo\Microchip\TCPIP Stack\Utilities\MPFS2.jar". It is STRONGLY RECOMMENDED to delete/rename the old three files (HTTPPrint.h, HTTPPrint.idx and MFPSImg.c) before generate their new version. Otherwise it may not work properly. After that you must rebuild the project and program the board with the new *.hex file. Open a browser and input the IP address of the board. You can see the IP address using the Microchip Ethernet Discoverer utlity. It could be found here: "<extract directory>\PIC-WEB Demo\Microchip\TCPIP Stack\Utilities\TCPIP Discoverer.jar". It's not possible to change the page without rebuilding and reprogramming since the webpage is hardcoded and included into the hex.
